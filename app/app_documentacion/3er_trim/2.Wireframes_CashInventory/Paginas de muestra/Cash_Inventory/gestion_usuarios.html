@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <title>USUARIOS</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- ++++++++++++++++++++++++++++++ Navbar +++++++++++++++++++++++++++++++ -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- ++++++++++++++++++++++++++++++ Marca y Logo +++++++++++++++++++++++++++++++ -->
+                <img src="img/moneda.png" class="icono_inicial">
+                <a class="navbar-brand" id="marca" href="home.html">Cash Inventory</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- ++++++++++++++++++++++++++++++ Itenms Navbar +++++++++++++++++++++++++++++++ -->
+                        <li class="nav-item dropdown" id="opciones">
+                            <div class="dropdown-dropstart" >
+                                <!-- ++++++++++++++++++++++++++++++ Opciones de Usuario +++++++++++++++++++++++++++++++ -->
+                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/usuario.png" alt="" class="foto_perfil" >
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="mi_perfil.html">Mi perfil</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ++++++++++++++++++++++++++++++ Configuración +++++++++++++++++++++++++++++++ -->
+                        <li class="nav-item">
+                            <a href="#" class="conf_icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-gear"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ++++++++++++++++++++++++++++++ Ventana Emergente de configuración +++++++++++++++++++++++++++++++ -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Configuración</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Habilitar notificaciones
+                        <select class="form-select" id="inputGroupSelect01" aria-label="Example select with button addon">
+                            <option selected>SI</option>
+                            <option value="1">NO</option>
+                        </select><br>
+                        Notificarme ingresos después de X productos
+                        <select class="form-select" id="inputGroupSelect02" aria-label="Example select with button addon">
+                            <option selected>10</option>
+                            <option value="2">20</option>
+                            <option value="2">30</option>
+                            <option value="2">40</option>
+                            <option value="2">50</option>
+                            <option value="2">100</option>
+                            <option value="2">Nunca</option>
+                        </select><br>
+                        Notificarme salidas después de X productos
+                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                            <option selected>10</option>
+                            <option value="2">20</option>
+                            <option value="2">30</option>
+                            <option value="2">40</option>
+                            <option value="2">50</option>
+                            <option value="2">100</option>
+                            <option value="2">Nunca</option>
+                        </select><br>
+                        Notificarme pocas unidades
+                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                            <option selected>10</option>
+                            <option value="2">20</option>
+                            <option value="2">30</option>
+                            <option value="2">40</option>
+                            <option value="2">50</option>
+                            <option value="2">100</option>
+                            <option value="2">Nunca</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ++++++++++++++++++++++++++++++ Caja semitransparente +++++++++++++++++++++++++++++++ -->
+        <div class="cuadro_center"></div>
+
+        <!-- ++++++++++++++++++++++++++++++ Contenedores Cajas semitransparentes +++++++++++++++++++++++++++++++ -->
+        <div class="cuadro_center_container">
+            <div class="row">
+                <div class="col-3"><br>
+                    <!-- ++++++++++++++++++++++++++++++ OPCIONES +++++++++++++++++++++++++++++++ -->
+                    <div class="d-grid gap-3">
+                        <a class="btn btn-warning btn-lg" role="button" href="#"><i class="bi bi-person-plus-fill"></i> Crear usuario</a>
+                        <a class="btn btn-warning btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#eliminar_usuario"><i class="bi bi-person-dash-fill"></i> Eliminar Usuario</a>
+                        <a class="btn btn-warning btn-lg" role="button"><i class="bi bi-person-check-fill"></i> Editar Usuario</a>
+                        <br><br>
+                        <a class="btn btn-warning btn-lg" role="button" href="home.html"><i class="bi bi-arrow-left-square-fill"></i> Volver al menú principal</a>
+                    </div>
+                </div>
+
+<!-- ++++++++++++++++++++++++++++++ Ventana Emergente de eliminar usuario +++++++++++++++++++++++++++++++ -->
+                <div class="modal fade" id="eliminar_usuario" tabindex="-1" aria-labelledby="eliminar_usuarioLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eliminar_usuarioLabel">Eliminar Usuario</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Desea confirmar eliminación de usuario
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <h1 class="titulo_modulo">USUARIOS</h1><br>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-3" role="group" aria-label="First group">
+                            <input type="text" class="form-control" placeholder="Usuario a Consultar" aria-describedby="basic-addon1">
+                        </div>
+<!-- ++++++++++++++++++++++++++++++ USUARIOS +++++++++++++++++++++++++++++++ -->
+                        <div class="btn-group me-3" role="group" aria-label="Second group">
+                            <select class="form-select" id="inputGroupSelect01" aria-label="Example select with button addon">
+                                <option selected>Filtro</option>
+                                <option value="2">Documento</option>
+                                <option value="3">Nombre</option>
+                                <option value="4">Apellido</option>
+                                <option value="5">Rol</option>
+                                <option value="6">Número Celular</option>
+                            </select>
+                        </div>
+
+                         <div class="btn-group" role="group" aria-label="Third group">
+                            <button type="button" class="btn btn-warning"><i class="bi bi-arrow-clockwise"></i> Buscar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <table class="table table-light table-striped">
+                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th class="table-dark" scope="col">#</th>
+                                        <th class="table-dark" scope="col">Documento</th>
+                                        <th class="table-dark" scope="col">Nombre</th>
+                                        <th class="table-dark" scope="col">Apellido</th>
+                                        <th class="table-dark"scope="col">Rol</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-light">
+                                        <th class="table-light" scope="row"><button type="button" class="btn btn-outline-dark">1</button></th>
+                                        <td class="table-light">1193149506</td>
+                                        <td class="table-light">Brayan Stevan</td>
+                                        <td class="table-light">Galeano Muñoz</td>
+                                        <td class="table-light">Administrador</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <th class="table-light" scope="row"><button type="button" class="btn btn-outline-dark">2</button></th>
+                                        <td class="table-light">1010247854</td>
+                                        <td class="table-light">Carol Lizeth</td>
+                                        <td class="table-light">Muñoz Muñoz</td>
+                                        <td class="table-light">Vendedor</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <th class="table-light" scope="row"><button type="button" class="btn btn-outline-dark">3</button></th>
+                                        <td class="table-light">79454232</td>
+                                        <td class="table-light">Carlos Andres</td>
+                                        <td class="table-light">Bautista Soler</td>
+                                        <td class="table-light">Administrador</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <th class="table-light" scope="row"><button type="button" class="btn btn-outline-dark">4</button></th>
+                                        <td class="table-light">41525634</td>
+                                        <td class="table-light">Andres Sneider</td>
+                                        <td class="table-light">Perez Salinas</td>
+                                        <td class="table-light">Bodeguista</td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                        </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+<!-- ++++++++++++++++++++++++++++++ Scripts +++++++++++++++++++++++++++++++ -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
