@@ -1,0 +1,20 @@
+*{
+    background-color: beige;
+}
+
+body{
+    margin-top:130px;
+}
+
+h2{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+#formulario{
+    text-align: center;
+    background-color: black;
+}
