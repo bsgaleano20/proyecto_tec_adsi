@@ -2,7 +2,7 @@
     class Landing{
         public function __construct(){}
         public function index(){
-            requiere_once 'view/bussiness/index.view.php'
+            require_once 'view/business/index.view.php';
         }
 
     }
