@@ -10,11 +10,11 @@
 <body>
    <div class="contenedor">
     <!-- navegador -->
-    <div class="nav">
-       <div class="borde logo"></div>
-       <div class="borde menu"></div>
-       <div class="borde ingreso">INGRESO</div>
-    </div>
+      <div class="nav">
+         <div class="borde logo"></div>
+         <div class="borde menu"></div>
+         <div class="borde ingreso">INGRESO</div>
+      </div>
     <br>
     <!-- encabezado -->
     <div class="cuerpo">
@@ -70,5 +70,7 @@
        <div class="borde pcontactenos1">inicio  portafolio</div>
     </div>
     </div>
+    <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>
