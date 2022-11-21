@@ -95,6 +95,12 @@
         <div id="caja_venta">
             <div class="cuadro_left"></div>
             <div class="cuadro_right_white"></div>
+            <div class="cuadro_left_container">
+                <h1 class="titulo_modulo">PRUEBA</h1>
+            </div>
+            <div class="cuadro_right_container">
+
+            </div>
             <button type="button" id="fullscreen_button" class="btn btn-dark" onclick="openFullscreen(); exitFullscreen(); ChangeIcon();"><i id="fullscreen_icon" class="bi bi-fullscreen"></i></button>
             
         </div>
