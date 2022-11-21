@@ -96,7 +96,7 @@
             <div class="cuadro_left"></div>
             <div class="cuadro_right_white"></div>
             <div class="cuadro_left_container">
-                <h1 class="titulo_modulo">Esta es la prueba desde mi usuario sena</h1>
+                <h1 class="titulo_modulo">prueba de titulo</h1>
             </div>
             <div class="cuadro_right_container">
 
