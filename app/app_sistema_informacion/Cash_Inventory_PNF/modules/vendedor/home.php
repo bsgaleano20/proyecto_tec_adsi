@@ -97,6 +97,7 @@
             <div class="cuadro_right_white"></div>
             <div class="cuadro_left_container">
                 <h1 class="titulo_modulo">prueba de titulo</h1>
+                <h1 class="titulo_modulo">prueba de segundo titulo_modulo</h1>
             </div>
             <div class="cuadro_right_container">
 
