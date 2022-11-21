@@ -93,14 +93,70 @@
             </div>
         </div>
         <div id="caja_venta">
-            <div class="cuadro_left"></div>
+            <div class="cuadro_left_ventas"></div>
             <div class="cuadro_right_white"></div>
-            <div class="cuadro_left_container">
-                <h1 class="titulo_modulo">prueba de titulo</h1>
-                <h1 class="titulo_modulo">prueba de segundo titulo_modulo</h1>
-            </div>
-            <div class="cuadro_right_container">
+            <div class="cuadro_left_ventas_container">
+                <h1 class="titulo_modulo">MODULOS</h1><br><br>
 
+                <div class="d-grid gap-2">
+                <!-- <div class="input-group">   
+                    <input type="text" class="form-control" placeholder="Codigo de barras">
+                    <button type="button" class="btn btn-warning" id="button-addon2"><i class="bi bi-search"></i> Buscar</button>
+                </div> -->
+
+                <!-- Button modal search product-->
+                <a class="btn btn-warning btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#searchProduct"><i class="bi bi-search"></i> Consultar producto</a>
+                <a class="btn btn-warning btn-lg" role="button" href="gestion_producto/gestion_producto.php"><i class="bi bi-clock-history"></i> Histotial de facturas</a>
+                <a class="btn btn-warning btn-lg" role="button"><i class="bi bi-x-circle"></i> Cancelar factura</a>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="searchProduct" tabindex="-1" aria-labelledby="searchProductLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Consultar Producto</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group">   
+                            <input type="text" class="form-control" placeholder="Codigo de barras">
+                            <button type="button" class="btn btn-warning" id="button-addon2"><i class="bi bi-search"></i> Buscar</button>
+                        </div>
+                        <br>
+                        <table class="table table-light table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="table-dark" scope="col">Nombre</th>
+                                    <th class="table-dark"scope="col">Precio Unitario</th>
+                                    <th class="table-dark"scope="col">Cantidad en Tienda</th>
+                                    <th class="table-dark"scope="col">Cantidad en Bodega</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-light">
+                                    <td class="table-light">Block Cuadriculado</td>
+                                    <td class="table-light">$7.000</td>
+                                    <td class="table-light">80</td>
+                                    <td class="table-light">150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            </div>
+            <div class="cuadro_right_white_container">
+                <div class="input-group">   
+                    <input type="text" class="form-control" placeholder="Codigo de barras">
+                    <button type="button" class="btn btn-warning" id="button-addon2"><i class="bi bi-cart-plus-fill"></i> Agregar Producto</button>
+                </div>
             </div>
             <button type="button" id="fullscreen_button" class="btn btn-dark" onclick="openFullscreen(); exitFullscreen(); ChangeIcon();"><i id="fullscreen_icon" class="bi bi-fullscreen"></i></button>
             
