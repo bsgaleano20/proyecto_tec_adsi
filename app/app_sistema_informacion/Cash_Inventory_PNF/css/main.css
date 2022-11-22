@@ -198,7 +198,34 @@ a:hover{
     text-align: center;
 }
 
+.texto_modulo{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.titulo_modulo_black{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.info_ventas{
+    margin: 10px;
+    background-color: beige;
+    border-radius: 15px;
+}
+
 #fullscreen_button{
     margin-left: 20px;
     margin-top: 15px;;
+}
+
+.input_cambio{
+    height: 44px;
+}
+
+.input_productos{
+    width: 80px;
 }
