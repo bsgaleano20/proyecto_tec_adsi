@@ -151,7 +151,6 @@ a:hover{
     margin-top: 5vh;
     margin-left: 4vw;
 }
-
 .camera{
     position: fixed;
     margin-left: 23vw;
@@ -228,4 +227,8 @@ a:hover{
 
 .input_productos{
     width: 80px;
+}
+.img_ref1{
+    width: 30vw;
+    margin-left: 20%;
 }
