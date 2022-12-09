@@ -107,8 +107,8 @@
                 <br><br><br><br>
 
                 <form action="" method="POST">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row text-center">
+                        <div class="col-6 form">
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-file-person-fill"></i></span>
@@ -171,7 +171,7 @@
                         </div>
 
                         <div class="col-6">
-                            <img src="../../../img/inventario.jpg" width="500px">
+                            <img src="../../../img/inventario.jpg" class="img_ref1" width="500px">
                         </div>
                     </div>
                 </form>

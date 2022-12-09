@@ -153,7 +153,7 @@
                                 <tr class="table-dark"> 
                                     <th class="table-dark" scope="col">Documento</th>
                                     <th class="table-dark" scope="col">Nombre</th>
-                                    <th class="table-dark" scope="col">email</th>
+                                    <th class="table-dark" scope="col">Email</th>
                                     <th class="table-dark"scope="col">Rol</th>
                                     <th class="table-dark"scope="col">Celular</th>
                                     <th class="table-dark"scope="col">Estado</th>
@@ -195,7 +195,7 @@
                                     <td class="table-light">
                                         <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
                                         <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
-                                    </td>
+                                    </td> 
                                 </tr>
                                 <tr class="table-light">
                                     <td class="table-light">41525634</td>

@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <!-- ++++++++++++++++++++++++++++++ Marca y Logo +++++++++++++++++++++++++++++++ -->
                 <img src="../../img/moneda.png" class="icono_inicial">
-                <a class="navbar-brand" id="marca" href="#">Cash Inventory</a>
+                <a class="navbar-brand" id="marca" href="home.php">Cash Inventory</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <!-- ++++++++++++++++++++++++++++++ Itenms Navbar +++++++++++++++++++++++++++++++ -->

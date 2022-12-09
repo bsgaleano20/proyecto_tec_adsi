@@ -109,8 +109,8 @@
 
                     <!-- Button modal search product-->
                     <a class="btn btn-warning btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#searchProduct"><i class="bi bi-search"></i> Consultar producto</a>
-                    <a class="btn btn-warning btn-lg" role="button" href="gestion_producto/gestion_producto.php"><i class="bi bi-clock-history"></i> Histotial de facturas</a>
-                    <a class="btn btn-warning btn-lg" role="button"><i class="bi bi-x-circle"></i> Cancelar factura</a>
+                    <a class="btn btn-warning btn-lg" role="button" href="historial.php"><i class="bi bi-clock-history"></i> Histotial de facturas</a>
+                    <a class="btn btn-warning btn-lg" role="button"  data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-x-circle"></i> Cancelar factura</a>
 
                     <br>
 
@@ -125,7 +125,7 @@
 
 
 
-                    <!-- Modal search product-->
+                    <!------------------------- Modal search product ------------------------------->
                     <div class="modal fade" id="searchProduct" tabindex="-1" aria-labelledby="searchProductLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
