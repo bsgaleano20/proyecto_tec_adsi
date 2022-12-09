@@ -107,7 +107,7 @@
                 <br><br><br><br>
 
                 <form action="" method="POST">
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-6">
 
                             <div class="input-group mb-3">
@@ -157,7 +157,7 @@
                         </div>
 
                         <div class="col-6">
-                            <img src="../../../img/inventario2.jpg" width="600px">
+                            <img src="../../../img/inventario2.jpg" class="img_ref1">
                         </div>
                     </div>
                 </form>
