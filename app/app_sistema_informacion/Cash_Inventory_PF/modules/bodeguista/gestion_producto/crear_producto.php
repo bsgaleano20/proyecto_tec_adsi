@@ -5,7 +5,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <title>Cash Inventory | Crear usuario</title>
+        <title>Cash Inventory | Crear Producto</title>
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <link rel="stylesheet" href="../../../css/main.css">
         <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> -->
@@ -102,61 +102,47 @@
             <div class="row">
                 <!-- ++++++++++++++++++++++++++++++ TITULO +++++++++++++++++++++++++++++++ -->
 
-                <h1 class="titulo_modulo">USUARIOS</h1>
+                <h1 class="titulo_modulo">PRODUCTOS</h1>
                 
                 <br><br><br><br>
 
                 <form action="" method="POST">
-                    <div class="row text-center">
-                        <div class="col-6 form">
+                    <div class="row">
+                        <div class="col-6">
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-file-person-fill"></i></span>
-                                <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-clipboard-fill"></i></span>
+                                <input type="text" class="form-control" placeholder="Nombre del Producto" aria-describedby="basic-addon1">
                             </div> 
 
                             <div class="input-group mb-3">
-                                <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo</button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Cedula de ciudadanía</a></li>
-                                    <li><a class="dropdown-item" href="#">Tarjeta de identidad</a></li>
-                                    <li><a class="dropdown-item" href="#">Cedula de extranjeria</a></li>
-                                </ul>
-                                <input type="text" class="form-control" placeholder="Documento" aria-label="Text input with dropdown button">
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
-                                <input type="text" class="form-control" placeholder="Correo" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-file-text-fill"></i></span>
+                                <input type="text" class="form-control" placeholder="Descripción" aria-describedby="basic-addon1">
                             </div> 
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"></i></span>
-                                <input type="text" class="form-control" placeholder="Telefono" aria-describedby="basic-addon1">
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
-                                <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-upc-scan"></i></span>
+                                <input type="text" class="form-control" placeholder="Código Barras" aria-describedby="basic-addon1">
                             </div> 
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-shield-fill-check"></i></span>
-                                <select class="form-select">
-                                    <option selected>Rol</option>
-                                    <option value="2">Administrador</option>
-                                    <option value="3">Vendedor</option>
-                                    <option value="4">Bodeguista</option>
-                                </select>
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-cash-stack"></i></span>
+                                <input type="text" class="form-control" placeholder="Valor unitario" aria-describedby="basic-addon1">
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-check"></i></i></span>
-                                <select class="form-select">
-                                    <option selected>Estado</option>
-                                    <option value="2">Habilitado</option>
-                                    <option value="3">Deshabilitado</option>
-                                </select>
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-badge-fill"></i></span>
+                                <input type="text" class="form-control" placeholder="Proveedor" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-shop"></i></span>
+                                <input type="number" class="form-control" placeholder="Cantidad en Tienda" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-archive-fill"></i></i></span>
+                                <input type="number" class="form-control" placeholder="Cantidad en Bodega" aria-describedby="basic-addon1">
                             </div>
 
                             <div class="row">
@@ -165,13 +151,13 @@
                                 </div>
                                 <div class="col-1"></div>
                                 <div class="col-5">
-                                    <div class="row"><a class="btn btn-warning" role="button" href="gestion_usuarios.php"> Volver</a></div>
+                                    <div class="row"><a class="btn btn-warning" role="button" href="gestion_producto.php"> Volver</a></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-6">
-                            <img src="../../../img/inventario.jpg" class="img_ref1" width="500px">
+                            <img src="../../../img/inventario2.jpg" width="600px">
                         </div>
                     </div>
                 </form>

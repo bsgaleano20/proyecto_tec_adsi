@@ -5,7 +5,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <title>Cash Inventory | Usuarios</title>
+        <title>Cash Inventory | Productos</title>
         <link rel="shortcut icon" href="../../../img/favicon.ico">
         <link rel="stylesheet" href="../../../css/main.css">
         <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> -->
@@ -102,40 +102,41 @@
             <div class="row">
                 
                 <!-- ++++++++++++++++++++++++++++++ USUARIOS +++++++++++++++++++++++++++++++ -->
-                <h1 class="titulo_modulo">USUARIOS</h1><br>
+                <h1 class="titulo_modulo">PRODUCTOS</h1><br>
                 <!-- ++++++++++++++++++++++++++++++ OPCIONES +++++++++++++++++++++++++++++++ -->
                 <br> <br> <br>
                 <div class="col-7">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Usuario">
+                        <input type="text" class="form-control" placeholder="Producto">
                         <select class="form-select">
                             <option selected>Filtro</option>
-                            <option value="2">Documento</option>
+                            <option value="2">Id</option>
                             <option value="3">Nombre</option>
-                            <option value="4">Rol</option>
-                            <option value="5">Celular</option>
-                            <option value="6">Estado</option>
+                            <option value="4">Codigo de barras</option>
+                            <option value="5">Precio</option>
+                            <option value="6">Cantidad en Tienda</option>
+                            <option value="7">Cantidad en Bodega</option>
                         </select>
                         <button type="button" class="btn btn-warning" id="button-addon2">Buscar</button>
                     </div>
                 </div>
                 <div class="col-5">
-                    <a class="btn btn-warning" role="button" href="crear_usuario.php"><i class="bi bi-person-plus-fill"></i> Crear usuario</a>
+                    <a class="btn btn-warning" role="button" href="crear_producto.php"><i class="bi bi-clipboard2-plus-fill"></i></i> Crear producto</a>
                     <a class="btn btn-warning" role="button" href="../home.php"><i class="bi bi-arrow-left-square-fill"></i> Volver al menú principal</a>
                 </div>
 
                 <br><br><br>
 
-                <!-- ++++++++++++++++++++ Ventana Emergente de eliminar usuario +++++++++++++++++++++++ -->
+                <!-- ++++++++++++++++++++ Ventana Emergente de eliminar producto +++++++++++++++++++++++ -->
                 <div class="modal fade" id="eliminarUsuario" tabindex="-1" aria-labelledby="eliminarUsuarioLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="eliminarUsuarioLabel">ELIMINAR USUARIO</h1>
+                            <h1 class="modal-title fs-5" id="eliminarUsuarioLabel">ELIMINAR PRODUCTO</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ¿Desea eliminar este usuario?
+                            ¿Desea eliminar este producto?
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -151,100 +152,100 @@
                         <div class="btn-group me-2" role="group" aria-label="First group">
                             <thead>
                                 <tr class="table-dark"> 
-                                    <th class="table-dark" scope="col">Documento</th>
+                                    <th class="table-dark" scope="col">Id</th>
                                     <th class="table-dark" scope="col">Nombre</th>
-                                    <th class="table-dark" scope="col">Email</th>
-                                    <th class="table-dark"scope="col">Rol</th>
-                                    <th class="table-dark"scope="col">Celular</th>
-                                    <th class="table-dark"scope="col">Estado</th>
-                                    <th class="table-dark" scope="col">Opciones</th>
+                                    <th class="table-dark" scope="col">Codigo de barras</th>
+                                    <th class="table-dark"scope="col">Precio Unitario</th>
+                                    <th class="table-dark"scope="col">Cantidad en Tienda</th>
+                                    <th class="table-dark"scope="col">Cantidad en Bodega</th>
+                                    <th class="table-dark"scope="col">Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-light">
-                                    <td class="table-light">1193149506</td>
-                                    <td class="table-light">Brayan Galeano</td>
-                                    <td class="table-light">brayan.galeano@cashinventory.com</td>
-                                    <td class="table-light">Administrador</td>
-                                    <td class="table-light">3202707745</td>
-                                    <td class="table-light">Activo</td>
+                                    <td class="table-light">1</td>
+                                    <td class="table-light">Block Cuadriculado</td>
+                                    <td class="table-light">788492808274</td>
+                                    <td class="table-light">$7.000</td>
+                                    <td class="table-light">80</td>
+                                    <td class="table-light">150</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i></i> Eliminar</a>  
                                     </td>
                                 </tr>
                                 <tr class="table-light">
-                                    <td class="table-light">1010247854</td>
-                                    <td class="table-light">Carol Muñoz</td>
-                                    <td class="table-light">carol.munoz@cashinventory.com</td>
-                                    <td class="table-light">Vendedor</td>
-                                    <td class="table-light">3193574635</td>
-                                    <td class="table-light">Activo</td>
+                                    <td class="table-light">2</td>
+                                    <td class="table-light">Marcador borrable NEGRO</td>
+                                    <td class="table-light">788492808145</td>
+                                    <td class="table-light">$5.000</td>
+                                    <td class="table-light">150</td>
+                                    <td class="table-light">300</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
                                     </td>
                                 </tr>
                                 <tr class="table-light">
-                                    <td class="table-light">79454232</td>
-                                    <td class="table-light">Carlos Soler</td>
-                                    <td class="table-light">carlos.soler@cashinventory.com</td>
-                                    <td class="table-light">Administrador</td>
-                                    <td class="table-light">3112846541</td>
-                                    <td class="table-light">Inactivo</td>
+                                    <td class="table-light">3</td>
+                                    <td class="table-light">Micropunta NEGRO</td>
+                                    <td class="table-light">788492804163</td>
+                                    <td class="table-light">$6.500</td>
+                                    <td class="table-light">80</td>
+                                    <td class="table-light">120</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
-                                    </td> 
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="table-light">41525634</td>
-                                    <td class="table-light">Andres Salinas</td>
-                                    <td class="table-light">andres.salinas@cashinventory.com</td>
-                                    <td class="table-light">Bodeguista</td>
-                                    <td class="table-light">3152220898</td>
-                                    <td class="table-light">Activo</td>
-                                    <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
                                     </td>
                                 </tr>
                                 <tr class="table-light">
-                                    <td class="table-light">24198203</td>
-                                    <td class="table-light">Michael Cuervo</td>
-                                    <td class="table-light">michael.cuervo@cashinventory.com</td>
-                                    <td class="table-light">Bodeguista</td>
-                                    <td class="table-light">3152220898</td>
-                                    <td class="table-light">Activo</td>
+                                    <td class="table-light">4</td>
+                                    <td class="table-light">Cosedora</td>
+                                    <td class="table-light">788492803548</td>
+                                    <td class="table-light">$12.000</td>
+                                    <td class="table-light">35</td>
+                                    <td class="table-light">90</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
                                     </td>
                                 </tr>
                                 <tr class="table-light">
-                                    <td class="table-light">1143323456</td>
-                                    <td class="table-light">Kelly Herrera</td>
-                                    <td class="table-light">kelly.herrera@cashinventory.com</td>
-                                    <td class="table-light">Vendedor</td>
-                                    <td class="table-light">3193576565</td>
-                                    <td class="table-light">Inactivo</td>
+                                    <td class="table-light">5</td>
+                                    <td class="table-light">Pegante en barra PEGASTICK</td>
+                                    <td class="table-light">788492822301</td>
+                                    <td class="table-light">$4.500</td>
+                                    <td class="table-light">105</td>
+                                    <td class="table-light">230</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
                                     </td>
                                 </tr>
                                 <tr class="table-light">
-                                    <td class="table-light">41322545</td>
-                                    <td class="table-light">Diana Morales</td>
-                                    <td class="table-light">diana.morales@cashinventory.com</td>
-                                    <td class="table-light">Bodeguista</td>
-                                    <td class="table-light">3225374323</td>
-                                    <td class="table-light">Activo</td>
+                                    <td class="table-light">6</td>
+                                    <td class="table-light">Perforadora 2 huecos</td>
+                                    <td class="table-light">788492802458</td>
+                                    <td class="table-light">$9.800</td>
+                                    <td class="table-light">40</td>
+                                    <td class="table-light">22</td>
                                     <td class="table-light">
-                                        <a type="button" href="crear_usuario.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
-                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-person-dash-fill"></i> Eliminar</a>  
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
                                     </td>
                                 </tr>
+                                <tr class="table-light">
+                                    <td class="table-light">7</td>
+                                    <td class="table-light">Cinta transparente ANCHA</td>
+                                    <td class="table-light">788492808271</td>
+                                    <td class="table-light">$6.000</td>
+                                    <td class="table-light">48</td>
+                                    <td class="table-light">92</td>
+                                    <td class="table-light">
+                                        <a type="button" href="crear_producto.php" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Editar</a>
+                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuario"><i class="bi bi-clipboard-x-fill"></i> Eliminar</a>  
+                                    </td>
+                                </tr>                  
                             </tbody>
                         </div>
                     </table>
