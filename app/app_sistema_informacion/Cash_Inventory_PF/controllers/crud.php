@@ -9,7 +9,15 @@ class Crud {
     public function __construct($tabla = null){
         $this->conexion = (new Conexion())->conectar();
         $this->tabla = $tabla;
-        
+    }
+
+    public function get(){
+        try{
+
+        }
+        catch{
+
+        }
     }
 }
 
